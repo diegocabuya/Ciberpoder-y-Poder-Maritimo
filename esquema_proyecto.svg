@@ -1,0 +1,144 @@
+<svg viewBox="0 0 1400 1160" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#0c2038"/>
+      <stop offset="0.55" stop-color="#0a1a2f"/>
+      <stop offset="1" stop-color="#081321"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5ec8e6"/>
+      <stop offset="1" stop-color="#7dd3f0"/>
+    </linearGradient>
+    <linearGradient id="expandbox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123a5c"/>
+      <stop offset="1" stop-color="#0e2c46"/>
+    </linearGradient>
+    <radialGradient id="cpglow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#e8504a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e8504a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="resultcard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14304f"/>
+      <stop offset="1" stop-color="#0d2138"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1160" fill="url(#bg)"/>
+  <rect width="1400" height="6" fill="url(#ice)"/>
+
+  <!-- ============ HEADER ============ -->
+  <text x="60" y="56" fill="#7dd3f0" font-size="15" font-weight="600" letter-spacing="2.5">ACADEMIA NAVAL DE ESTUDIOS ESTRATÉGICOS   ·   ARMADA NACIONAL DE COLOMBIA</text>
+  <text x="60" y="106" fill="#eef4fb" font-size="46" font-weight="800" letter-spacing="0.5">CIBERPODER Y PODER MARÍTIMO</text>
+  <text x="60" y="146" fill="#9db4cc" font-size="19">El ciberpoder como variable estructural del poder marítimo · actualización de su formulación conceptual</text>
+  <text x="1340" y="98" fill="#7dd3f0" font-size="15" font-weight="700" text-anchor="end">RCGJMC · DOSIER 60</text>
+  <text x="1340" y="120" fill="#6b8199" font-size="13" text-anchor="end">proyección 2027 · APA 7</text>
+
+  <!-- ============ BAND B: EVOLUCIÓN (izq) ============ -->
+  <text x="60" y="216" fill="#7dd3f0" font-size="14" font-weight="700" letter-spacing="1.8">DE LA FÓRMULA CLÁSICA A LA FÓRMULA AMPLIADA</text>
+
+  <!-- Classical box -->
+  <rect x="60" y="232" width="720" height="92" rx="12" fill="#0f2338" stroke="#284a68" stroke-width="1.5"/>
+  <text x="82" y="262" fill="#8fa8c0" font-size="13" font-weight="700" letter-spacing="1.2">FÓRMULA CLÁSICA</text>
+  <text x="82" y="293" fill="#eef4fb" font-size="22" font-weight="600">Poder Marítimo  =  Intereses Marítimos  ×  Poder Naval</text>
+  <text x="82" y="314" fill="#6b8199" font-size="12.5">Till (2007) · Solís Oyarzún (1997) · Uribe Cáceres et al. (2016)</text>
+
+  <!-- Gap arrow -->
+  <path d="M 420 330 L 420 360 M 411 351 L 420 362 L 429 351" stroke="#7dd3f0" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="450" y="352" fill="#c98a3a" font-size="13.5" font-style="italic">brecha: el ciberespacio no se formaliza</text>
+
+  <!-- Expanded box -->
+  <rect x="60" y="372" width="720" height="182" rx="14" fill="url(#expandbox)" stroke="#5ec8e6" stroke-width="2"/>
+  <text x="82" y="404" fill="#7dd3f0" font-size="13" font-weight="700" letter-spacing="1.2">FÓRMULA AMPLIADA · NORMALIZADA</text>
+  <text x="420" y="461" fill="#ffffff" font-size="19" font-weight="700" text-anchor="middle" letter-spacing="0.3">PM_norm = [ (IM × PN) × VE × SM^γ × CP^α ]^(1/(2+γ+α))</text>
+  <line x1="100" y1="502" x2="740" y2="502" stroke="#284a68" stroke-width="1"/>
+  <text x="420" y="528" fill="#9db4cc" font-size="14" text-anchor="middle">n_eff = 2 + γ + α   →   PM_norm ∈ (0, 1]   ·   media geométrica (PNUD, 2010; OCDE, 2008)</text>
+
+  <!-- ============ BAND B: RESULTADO COLOMBIA (der) ============ -->
+  <rect x="810" y="232" width="530" height="322" rx="14" fill="url(#resultcard)" stroke="#3a5a7a" stroke-width="1.5"/>
+  <text x="1075" y="272" fill="#8fa8c0" font-size="14" font-weight="700" letter-spacing="1.5" text-anchor="middle">CASO DE ILUSTRACIÓN · COLOMBIA 2020</text>
+  <text x="1075" y="316" fill="#9db4cc" font-size="18" text-anchor="middle">PM_norm  ≈</text>
+  <text x="1075" y="418" fill="#f0b429" font-size="94" font-weight="800" text-anchor="middle">0.43</text>
+  <!-- badge -->
+  <rect x="960" y="440" width="230" height="42" rx="21" fill="#f0b429" opacity="0.16"/>
+  <rect x="960" y="440" width="230" height="42" rx="21" fill="none" stroke="#f0b429" stroke-width="1.5"/>
+  <text x="1075" y="467" fill="#f0b429" font-size="19" font-weight="800" letter-spacing="2" text-anchor="middle">NIVEL MODERADO</text>
+  <text x="1075" y="518" fill="#9db4cc" font-size="14" text-anchor="middle">Validación cruzada — coherente con el índice 0.44</text>
+  <text x="1075" y="538" fill="#9db4cc" font-size="14" text-anchor="middle">de Vargas Suárez et al. (2021, p. 295)</text>
+
+  <!-- ============ BAND C: CINCO VARIABLES ============ -->
+  <text x="60" y="606" fill="#7dd3f0" font-size="14" font-weight="700" letter-spacing="1.8">CINCO VARIABLES ESTRUCTURALES</text>
+
+  <!-- Card IM -->
+  <rect x="60" y="626" width="240" height="152" rx="12" fill="#0f2338" stroke="#284a68" stroke-width="1.5"/>
+  <rect x="60" y="626" width="240" height="6" rx="3" fill="#4a8ff5"/>
+  <text x="180" y="684" fill="#4a8ff5" font-size="38" font-weight="800" text-anchor="middle">IM</text>
+  <text x="180" y="714" fill="#eef4fb" font-size="15" font-weight="600" text-anchor="middle">Intereses Marítimos</text>
+  <text x="180" y="754" fill="#6b8199" font-size="12.5" text-anchor="middle">Núcleo clásico</text>
+
+  <!-- Card PN -->
+  <rect x="320" y="626" width="240" height="152" rx="12" fill="#0f2338" stroke="#284a68" stroke-width="1.5"/>
+  <rect x="320" y="626" width="240" height="6" rx="3" fill="#9b7ff5"/>
+  <text x="440" y="684" fill="#9b7ff5" font-size="38" font-weight="800" text-anchor="middle">PN</text>
+  <text x="440" y="714" fill="#eef4fb" font-size="15" font-weight="600" text-anchor="middle">Poder Naval</text>
+  <text x="440" y="754" fill="#6b8199" font-size="12.5" text-anchor="middle">Núcleo clásico</text>
+
+  <!-- Card VE -->
+  <rect x="580" y="626" width="240" height="152" rx="12" fill="#0f2338" stroke="#284a68" stroke-width="1.5"/>
+  <rect x="580" y="626" width="240" height="6" rx="3" fill="#2dd4a0"/>
+  <text x="700" y="684" fill="#2dd4a0" font-size="38" font-weight="800" text-anchor="middle">VE</text>
+  <text x="700" y="714" fill="#eef4fb" font-size="15" font-weight="600" text-anchor="middle">Voluntad Estratégica</text>
+  <text x="700" y="754" fill="#6b8199" font-size="12.5" text-anchor="middle">Multiplicador del sistema</text>
+
+  <!-- Card SM -->
+  <rect x="840" y="626" width="240" height="152" rx="12" fill="#0f2338" stroke="#284a68" stroke-width="1.5"/>
+  <rect x="840" y="626" width="240" height="6" rx="3" fill="#f0b429"/>
+  <text x="960" y="684" fill="#f0b429" font-size="38" font-weight="800" text-anchor="middle">SM</text>
+  <text x="960" y="714" fill="#eef4fb" font-size="15" font-weight="600" text-anchor="middle">Seguridad Marítima</text>
+  <text x="960" y="754" fill="#6b8199" font-size="12.5" text-anchor="middle">Condición del entorno · exp. γ</text>
+
+  <!-- Card CP (destacada) -->
+  <rect x="1100" y="626" width="240" height="152" rx="12" fill="url(#cpglow)"/>
+  <rect x="1100" y="626" width="240" height="152" rx="12" fill="#17293a" stroke="#e8504a" stroke-width="2.2"/>
+  <rect x="1100" y="626" width="240" height="6" rx="3" fill="#e8504a"/>
+  <text x="1224" y="652" fill="#e8504a" font-size="16" text-anchor="middle">★</text>
+  <text x="1220" y="688" fill="#e8504a" font-size="38" font-weight="800" text-anchor="middle">CP</text>
+  <text x="1220" y="718" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">Ciberpoder</text>
+  <text x="1220" y="757" fill="#f0a8a4" font-size="12.5" font-weight="600" text-anchor="middle">NUEVA variable · exp. α</text>
+
+  <!-- ============ BAND D: ESCALA ============ -->
+  <text x="60" y="838" fill="#7dd3f0" font-size="14" font-weight="700" letter-spacing="1.8">ESCALA DE INTERPRETACIÓN   ·   PM_norm ∈ (0, 1]</text>
+
+  <!-- Colombia marker -->
+  <text x="610" y="872" fill="#f0b429" font-size="14" font-weight="800" text-anchor="middle">COLOMBIA · 0.43</text>
+  <path d="M 601 878 L 619 878 L 610 892 Z" fill="#f0b429"/>
+
+  <!-- Scale bar -->
+  <rect x="60" y="894" width="256" height="36" fill="#ff7875"/>
+  <rect x="316" y="894" width="256" height="36" fill="#e8504a"/>
+  <rect x="572" y="894" width="256" height="36" fill="#f0b429"/>
+  <rect x="828" y="894" width="256" height="36" fill="#4a8ff5"/>
+  <rect x="1084" y="894" width="256" height="36" fill="#2dd4a0"/>
+  <rect x="60" y="894" width="1280" height="36" rx="4" fill="none" stroke="#081321" stroke-width="2"/>
+
+  <!-- Scale labels -->
+  <text x="188" y="954" fill="#eef4fb" font-size="14" font-weight="700" text-anchor="middle">Crítico</text>
+  <text x="188" y="972" fill="#8fa8c0" font-size="12" text-anchor="middle">0.00 – 0.20</text>
+  <text x="444" y="954" fill="#eef4fb" font-size="14" font-weight="700" text-anchor="middle">Bajo</text>
+  <text x="444" y="972" fill="#8fa8c0" font-size="12" text-anchor="middle">0.21 – 0.40</text>
+  <text x="700" y="954" fill="#f0b429" font-size="14" font-weight="800" text-anchor="middle">Moderado</text>
+  <text x="700" y="972" fill="#8fa8c0" font-size="12" text-anchor="middle">0.41 – 0.60</text>
+  <text x="956" y="954" fill="#eef4fb" font-size="14" font-weight="700" text-anchor="middle">Significativo</text>
+  <text x="956" y="972" fill="#8fa8c0" font-size="12" text-anchor="middle">0.61 – 0.80</text>
+  <text x="1212" y="954" fill="#eef4fb" font-size="14" font-weight="700" text-anchor="middle">Alto</text>
+  <text x="1212" y="972" fill="#8fa8c0" font-size="12" text-anchor="middle">0.81 – 1.00</text>
+
+  <!-- ============ BAND E: FOOTER ============ -->
+  <rect x="60" y="1004" width="1280" height="66" rx="12" fill="#0e2c46" stroke="#3a5a7a" stroke-width="1.5"/>
+  <rect x="60" y="1004" width="6" height="66" rx="3" fill="#e8504a"/>
+  <text x="700" y="1035" fill="#eef4fb" font-size="17" font-weight="600" text-anchor="middle">El ciberpoder es la variable de mayor retorno marginal sobre el poder marítimo</text>
+  <text x="700" y="1058" fill="#eef4fb" font-size="17" font-weight="600" text-anchor="middle">de las potencias medias regionales.</text>
+
+  <text x="60" y="1108" fill="#6b8199" font-size="13">github.com/diegocabuya/Ciberpoder-y-Poder-Maritimo</text>
+  <text x="1340" y="1108" fill="#6b8199" font-size="13" text-anchor="end">Simulador interactivo · 26 referencias · CF Diego Cabuya-Padilla, PhD</text>
+</svg>
