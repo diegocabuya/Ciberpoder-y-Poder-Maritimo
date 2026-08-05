@@ -6,6 +6,16 @@
 
 ![Esquema del proyecto](esquema_proyecto.svg)
 
+<p align="center">
+  <a href="https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/simulador_PM_interactivo_v6.html">
+    <img src="https://img.shields.io/badge/%E2%96%B6%20Simulador-Abrir%20en%20vivo-2dd4a0?style=for-the-badge&logo=github&logoColor=white" alt="Abrir simulador en vivo">
+  </a>
+  &nbsp;
+  <a href="Articulo_Ciberpoder_Poder_Maritimo.pdf">
+    <img src="https://img.shields.io/badge/%F0%9F%93%84%20Art%C3%ADculo-Leer%20en%20PDF-e8504a?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Leer el articulo en PDF">
+  </a>
+</p>
+
 ---
 
 ## Resumen
@@ -52,7 +62,8 @@ El hallazgo central: para las potencias medias regionales, el **ciberpoder es la
 
 ## Contenido del repositorio
 
-- **`simulador_PM_interactivo_v6.html`** — Simulador interactivo de la fórmula ampliada. Permite ajustar las cinco variables y los exponentes γ y α, comparar países de referencia y visualizar el resultado sobre la escala de interpretación. Se abre directamente en cualquier navegador.
+- **[`Articulo_Ciberpoder_Poder_Maritimo.pdf`](Articulo_Ciberpoder_Poder_Maritimo.pdf)** — Artículo científico completo (formulación conceptual, desarrollo de la fórmula ampliada, caso colombiano y agenda de investigación).
+- **[`simulador_PM_interactivo_v6.html`](simulador_PM_interactivo_v6.html)** — Simulador interactivo de la fórmula ampliada. Permite ajustar las cinco variables y los exponentes γ y α, comparar países de referencia y visualizar el resultado sobre la escala de interpretación. Se abre directamente en cualquier navegador o [**en vivo aquí**](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/simulador_PM_interactivo_v6.html).
 - **`esquema_proyecto.svg`** — Esquema visual del proyecto.
 
 ## Cita sugerida
