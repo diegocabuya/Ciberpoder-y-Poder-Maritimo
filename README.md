@@ -4,7 +4,7 @@
 
 ### *Una actualización de su formulación conceptual*
 
-**C.F. Diego Edison Cabuya Padilla, PhD**
+**CF Diego Edison Cabuya Padilla, PhD**
 Academia Naval de Estudios Estratégicos (ANEES) · Bogotá, Colombia
 
 [![Simulador](https://img.shields.io/badge/▶_Simulador-interactivo-185FA5?style=for-the-badge)](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/simulador/simulador_PM_interactivo_v6.html)
@@ -60,10 +60,10 @@ La escala de interpretación tiene cinco niveles: **Crítico** (0.00–0.20), **
 ├── simulador/
 │   └── simulador_PM_interactivo_v6.html
 ├── docs/
-│   └── ARTICULO_FINAL_v9_RCGJMC.docx   ← Artículo (ecuaciones nativas de Word)
+│   └── Articulo_Ciberpoder_Poder_Maritimo.pdf   ← Artículo completo en PDF
 ├── presentacion/
-│   ├── Presentacion_PM_Ciberpoder_v6.pptx / .pdf   ← 17 láminas
-│   └── Diapositivas_Simulador_PM.pptx / .pdf       ← guía del simulador
+│   ├── Presentacion_PM_Ciberpoder_v6.pdf   ← 17 láminas
+│   └── Diapositivas_Simulador_PM.pdf       ← guía del simulador
 ├── infografia/
 │   └── Infografia_PM_Ciberpoder.pdf / .png
 └── figuras/
@@ -73,13 +73,11 @@ La escala de interpretación tiene cinco niveles: **Crítico** (0.00–0.20), **
 
 | Material | Formato | Descripción |
 |----------|---------|-------------|
-| **Artículo** | Word (.docx) | Manuscrito completo v9 con ecuaciones nativas editables |
+| **Artículo** | PDF | Documento completo del artículo |
 | **Simulador** | HTML | Modelo interactivo con 27 controles y 11 países |
-| **Presentación** | PPTX / PDF | 17 láminas de exposición ejecutiva |
+| **Presentación** | PDF | 17 láminas de exposición ejecutiva |
 | **Infografía** | PDF / PNG | Síntesis en una página tamaño carta |
 | **Ecuaciones** | PNG | 8 láminas didácticas del modelo, variable por variable |
-
-> **Nota sobre el PDF del artículo.** El `.docx` usa el editor de ecuaciones nativo de Word (OMML). Para un PDF fiel, ábrelo en Microsoft Word y expórtalo con *Archivo → Exportar → PDF*.
 
 ---
 
@@ -123,6 +121,6 @@ El **código del simulador y del sitio** se comparte bajo licencia [**MIT**](htt
 <div align="center">
 
 **Academia Naval de Estudios Estratégicos** · Armada Nacional de Colombia · Bogotá
-Proyecto de investigación en Poder Marítimo, Ciberpoder y Ciberdefensa Marítima
+Proyecto de investigación en Poder Marítimo y Ciberpoder
 
 </div>
