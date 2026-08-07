@@ -69,11 +69,11 @@ body{background:var(--bg0);color:var(--text);font-family:'Segoe UI',system-ui,sa
 .sk{font-size:9px;font-weight:700;width:28px;flex-shrink:0}
 .sd{font-size:8.5px;color:var(--text3);width:138px;flex-shrink:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
 input[type=range]{flex:1;-webkit-appearance:none;appearance:none;height:3px;border-radius:2px;outline:none;cursor:pointer}
-input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:12px;height:12px;border-radius:50%;border:2px solid var(--bg0)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:var(--thumb,#fff);border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.45)}input[type=range]::-moz-range-thumb{width:15px;height:15px;border-radius:50%;background:var(--thumb,#fff);border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.45);cursor:pointer}
 .sv{font-size:9px;font-weight:700;width:30px;text-align:right;font-family:monospace;flex-shrink:0}
 .ssep{height:1px;background:var(--border);margin:4px 0}
 .cmp-ch{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:8px}
-.ch230{position:relative;height:230px}
+.ch230{position:relative;height:360px}
 .ch210{position:relative;height:210px}
 .legrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;justify-content:center}
 .li{display:flex;align-items:center;gap:3px;font-size:9px;color:var(--text2)}
@@ -111,7 +111,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:12px;heigh
       <div class="fnote">n<sub>eff</sub> = 2 + γ + α &nbsp;·&nbsp; PM<sub>norm</sub> ∈ (0, 1]</div>
       <div class="vpills">
         <span class="vp vx">Normalización: media geométrica — PNUD (2010); OCDE (2008)</span>
-        <span class="vp vx">Colombia → PM<sub>norm</sub> ≈ 0.43 — anclado en la escala de Vargas Suárez et al. (2021, p.295), que el modelo descompone</span>
+        <span class="vp vx">La escala (0, 1] es comparable con el índice de poder marítimo de Vargas Suárez et al. (2021); este modelo añade el desglose por componente que aquel no distingue.</span>
       </div>
     </div>
   </div>
@@ -205,7 +205,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:12px;heigh
       <tbody>
         <tr><td style="font-family:monospace;font-weight:600">0.81–1.00</td><td><span class="lb" style="background:rgba(45,212,160,.15);color:#2dd4a0">Alto</span></td><td style="color:var(--text2)">Potencia consolidada con proyección multidominio global</td></tr>
         <tr><td style="font-family:monospace;font-weight:600">0.61–0.80</td><td><span class="lb" style="background:rgba(74,143,245,.15);color:#4a8ff5">Significativo</span></td><td style="color:var(--text2)">Potencia regional con capacidades multidominio desarrolladas</td></tr>
-        <tr><td style="font-family:monospace;font-weight:600">0.41–0.60</td><td><span class="lb" style="background:rgba(240,180,41,.15);color:#f0b429">Moderado</span></td><td style="color:var(--text2)">Potencia en desarrollo con brechas estratégicas identificables<div class="cf">🇨🇴 Colombia 2020 (≈0.43) · Vargas Suárez et al. (2021, p.295)</div></td></tr>
+        <tr><td style="font-family:monospace;font-weight:600">0.41–0.60</td><td><span class="lb" style="background:rgba(240,180,41,.15);color:#f0b429">Moderado</span></td><td style="color:var(--text2)">Potencia en desarrollo con brechas estratégicas identificables</td></tr>
         <tr><td style="font-family:monospace;font-weight:600">0.21–0.40</td><td><span class="lb" style="background:rgba(232,80,74,.1);color:#e8504a">Bajo</span></td><td style="color:var(--text2)">Capacidad incipiente con vulnerabilidades estructurales dominantes</td></tr>
         <tr><td style="font-family:monospace;font-weight:600">0.00–0.20</td><td><span class="lb" style="background:rgba(232,80,74,.2);color:#ff7875">Crítico</span></td><td style="color:var(--text2)">Vulnerabilidad marítima estructural — aprovechamiento mínimo del dominio</td></tr>
       </tbody>
@@ -308,7 +308,7 @@ function buildSliders(){
         ${sub.v.map(v=>`<div class="sr">
           <span class="sk" style="color:${g.c}">${v.l}</span>
           <span class="sd">${v.d}</span>
-          <input type="range" min=".05" max=".99" step=".01" value="${(ST[v.k]||.5).toFixed(2)}" id="sl-${v.k}" oninput="onSl('${v.k}',this.value)" style="accent-color:${g.c}">
+          <input type="range" min=".05" max=".99" step=".01" value="${(ST[v.k]||.5).toFixed(2)}" id="sl-${v.k}" oninput="onSl('${v.k}',this.value)" style="accent-color:${g.c};--thumb:${g.c}">
           <span class="sv" id="sv-${v.k}">${(ST[v.k]||.5).toFixed(2)}</span>
         </div>`).join('')}
       </div>`).join('');
