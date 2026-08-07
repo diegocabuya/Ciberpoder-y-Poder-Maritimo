@@ -104,9 +104,9 @@ Está construido en HTML + JavaScript con [Chart.js](https://www.chartjs.org/); 
   author  = {Cabuya Padilla, Diego Edison},
   title   = {El ciberpoder como variable estructural del poder marítimo:
              una actualización de su formulación conceptual},
-  journal = {Revista Científica General José María Córdova},
-  note    = {Dosier 60, en prensa},
-  year    = {2027}
+  journal = {Pendiente},
+  note    = {Pendiente},
+  year    = {2026}
 }
 ```
 
