@@ -9,7 +9,7 @@ Academia Naval de Estudios Estratégicos (ANEES) · Bogotá, Colombia
 
 [![Simulador](https://img.shields.io/badge/▶_Simulador-interactivo-185FA5?style=for-the-badge)](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/simulador/simulador_PM_interactivo_v6.html)
 [![Sitio](https://img.shields.io/badge/🌐_Sitio-del_proyecto-0D2A42?style=for-the-badge)](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/)
-[![Revista](https://img.shields.io/badge/REVISTA-PENDIENTE-993C1D?style=for-the-badge)](https://www.revistacientificaesmic.com/)
+[![ANEES](https://img.shields.io/badge/ANEES-Bogotá-993C1D?style=for-the-badge)](https://github.com/diegocabuya/Ciberpoder-y-Poder-Maritimo)
 
 </div>
 
@@ -95,18 +95,18 @@ Está construido en HTML + JavaScript con [Chart.js](https://www.chartjs.org/); 
 
 **APA (7.ª edición):**
 
-> Cabuya Padilla, D. E. (2027). El ciberpoder como variable estructural del poder marítimo: una actualización de su formulación conceptual. *Revista Científica General José María Córdova*, Dosier 60. (en prensa)
+> Cabuya Padilla, D. E. (2026). *El ciberpoder como variable estructural del poder marítimo: una actualización de su formulación conceptual* [Manuscrito de investigación]. Academia Naval de Estudios Estratégicos, Bogotá.
 
 **BibTeX:**
 
 ```bibtex
-@article{cabuya2027ciberpoder,
-  author  = {Cabuya Padilla, Diego Edison},
-  title   = {El ciberpoder como variable estructural del poder marítimo:
-             una actualización de su formulación conceptual},
-  journal = {Pendiente},
-  note    = {Pendiente},
-  year    = {2026}
+@unpublished{cabuya2026ciberpoder,
+  author = {Cabuya Padilla, Diego Edison},
+  title  = {El ciberpoder como variable estructural del poder marítimo:
+            una actualización de su formulación conceptual},
+  note   = {Manuscrito de investigación},
+  school = {Academia Naval de Estudios Estratégicos, Bogotá},
+  year   = {2026}
 }
 ```
 
