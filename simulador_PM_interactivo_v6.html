@@ -108,7 +108,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;heigh
     <div class="fblock b2">
       <div class="flbl">Fórmula normalizada — Ec. (1b-1c)</div>
       <div class="feq">PM<sub>norm</sub> = [ PM ]<sup>1/n<sub>eff</sub></sup></div>
-      <div class="fnote">n<sub>eff</sub> = 2 + γ + α &nbsp;·&nbsp; PM<sub>norm</sub> ∈ (0, 1]</div>
+      <div class="fnote">n<sub>eff</sub> = 3 + γ + α &nbsp;·&nbsp; PM<sub>norm</sub> ∈ (0, 1]</div>
       <div class="vpills">
         <span class="vp vx">Normalización: media geométrica — PNUD (2010); OCDE (2008)</span>
         <span class="vp vx">La escala (0, 1] es comparable con el índice de poder marítimo de Vargas Suárez et al. (2021); este modelo añade el desglose por componente que aquel no distingue.</span>
@@ -148,7 +148,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;heigh
       <div class="pml">Poder Marítimo Normalizado — PM<sub>norm</sub></div>
       <div class="pm-badge" id="pm-badge">Moderado</div>
       <div class="pm-desc" id="pm-desc">Potencia marítima en desarrollo con brechas estratégicas identificables</div>
-      <div class="pm-neff" id="pm-neff">n_eff = 3.25</div>
+      <div class="pm-neff" id="pm-neff">n_eff = 4.25</div>
     </div>
   </div>
 
@@ -210,7 +210,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;heigh
         <tr><td style="font-family:monospace;font-weight:600">0.00–0.20</td><td><span class="lb" style="background:rgba(232,80,74,.2);color:#ff7875">Crítico</span></td><td style="color:var(--text2)">Vulnerabilidad marítima estructural — aprovechamiento mínimo del dominio</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:6px;font-size:8px;color:var(--text3);line-height:1.6">PM_norm = [(IM × PN) × VE × SM^γ × CP^α]^(1/n_eff) · n_eff = 2+γ+α · OCDE (2008); PNUD (2010) · Valores indicativos para validación del modelo</div>
+    <div style="margin-top:6px;font-size:8px;color:var(--text3);line-height:1.6">PM_norm = [(IM × PN) × VE × SM^γ × CP^α]^(1/n_eff) · n_eff = 3+γ+α · OCDE (2008); PNUD (2010) · Valores indicativos para validación del modelo</div>
   </div>
 </div>
 
@@ -260,7 +260,7 @@ const GR=[
     {l:'Capacidades CS · CD · CR · CDb',v:[{k:'CS',l:'CS_m',d:'Ciberseguridad Marítima'},{k:'CD',l:'CD_m',d:'Ciberdefensa Marítima (estratégico)'},{k:'CR',l:'CR_m',d:'Ciberresiliencia Marítima'},{k:'CDb',l:'CDb',d:'Ciberdiplomacia (proyección)'}]},
     {l:'Pesos β₁ β₂ β₃ y δ',v:[{k:'b1',l:'β₁',d:'Peso de CS_m en CP'},{k:'b2',l:'β₂',d:'Peso de CD_m en CP'},{k:'b3',l:'β₃',d:'Peso de CR_m en CP'},{k:'dl',l:'δ',d:'Efectividad CDb como amplificador'}]}
   ]},
-  {k:'PAR',n:'Parámetros del modelo',c:'#8891a8',e:'n_eff = 2+γ+α ; PM_norm = [PM]^(1/n_eff)',s:[
+  {k:'PAR',n:'Parámetros del modelo',c:'#8891a8',e:'n_eff = 3+γ+α ; PM_norm = [PM]^(1/n_eff)',s:[
     {l:'α y γ',v:[{k:'alpha',l:'α',d:'IMCE — Madurez Cibernética Estratégica'},{k:'gamma',l:'γ',d:'Peso global SM en el sistema PM'}]}
   ]}
 ];
@@ -272,7 +272,7 @@ function pN(s){return s.F*s.P*Math.pow(Math.max(s.MDA,.001),s.mu)}
 function vE(s){const sw=s.w1+s.w2+s.w3;return Math.pow(Math.pow(Math.max(s.VP,.001),s.w1)*Math.pow(Math.max(s.VI,.001),s.w2)*Math.pow(Math.max(s.VS,.001),s.w3),1/sw)}
 function sM(s){const sa=s.a1+s.a2+s.a3;return Math.pow(Math.pow(Math.max(s.CI,.001),s.a1)*Math.pow(Math.max(s.TE,.001),s.a2)*Math.pow(Math.max(s.BC,.001),s.a3),1/sa)}
 function cP(s){return Math.min((s.b1*s.CS+s.b2*s.CD+s.b3*s.CR)*(1+s.dl*s.CDb),1)}
-function PM(s){const pn=pN(s),ve=vE(s),sm=sM(s),cp=cP(s);const inner=s.IM*pn*ve*Math.pow(Math.max(sm,.001),s.gamma)*Math.pow(Math.max(cp,.001),s.alpha);return Math.pow(Math.max(inner,1e-9),1/(2+s.gamma+s.alpha))}
+function PM(s){const pn=pN(s),ve=vE(s),sm=sM(s),cp=cP(s);const inner=s.IM*pn*ve*Math.pow(Math.max(sm,.001),s.gamma)*Math.pow(Math.max(cp,.001),s.alpha);return Math.pow(Math.max(inner,1e-9),1/(3+s.gamma+s.alpha))}
 function disp(s){return{IM:s.IM,PN:pN(s),VE:vE(s),SM:sM(s),CP:cP(s)}}
 function getLv(v){return LV.find(l=>v>=l.mn&&v<l.mx)||LV[4]}
 
@@ -362,7 +362,7 @@ function buildCharts(){
 
 function updSens(){
   const tb=document.getElementById('sens-body');if(!tb)return;
-  const d=disp(ST),neff=2+ST.gamma+ST.alpha,pm0=PM(ST);
+  const d=disp(ST),neff=3+ST.gamma+ST.alpha,pm0=PM(ST);
   const rows=[
     {k:'IM',lbl:'IM (peso directo)',w:1,c:VC.IM},
     {k:'PN',lbl:'PN (peso directo)',w:1,c:VC.PN},
@@ -379,11 +379,11 @@ function updSens(){
   }).join('');
 }
 function update(){
-  const pm=PM(ST),lv=getLv(pm),d=disp(ST),neff=(2+ST.gamma+ST.alpha).toFixed(2);
+  const pm=PM(ST),lv=getLv(pm),d=disp(ST),neff=(3+ST.gamma+ST.alpha).toFixed(2);
   const el=document.getElementById('pm-num');el.textContent=pm.toFixed(3);el.style.color=lv.c;
   const badge=document.getElementById('pm-badge');badge.textContent=lv.l;badge.style.background=lv.c+'20';badge.style.color=lv.c;badge.style.border='1px solid '+lv.c+'50';
   document.getElementById('pm-desc').textContent=lv.d;
-  document.getElementById('pm-neff').textContent=`n_eff = 2 + ${ST.gamma.toFixed(2)} + ${ST.alpha.toFixed(2)} = ${neff}  ·  PN=${d.PN.toFixed(2)}  VE=${d.VE.toFixed(2)}  SM=${d.SM.toFixed(2)}  CP=${d.CP.toFixed(2)}`;
+  document.getElementById('pm-neff').textContent=`n_eff = 3 + ${ST.gamma.toFixed(2)} + ${ST.alpha.toFixed(2)} = ${neff}  ·  PN=${d.PN.toFixed(2)}  VE=${d.VE.toFixed(2)}  SM=${d.SM.toFixed(2)}  CP=${d.CP.toFixed(2)}`;
   VK.forEach(v=>{drawG(v,d[v],VC[v]);const gv=document.getElementById('gv-'+v);if(gv)gv.textContent=d[v].toFixed(2);});
   if(rC){rC.data.datasets[0].data=VK.map(v=>d[v]);rC.update();}
   updBar();updSens();
