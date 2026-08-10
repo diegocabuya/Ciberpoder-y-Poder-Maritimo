@@ -9,7 +9,7 @@ Academia Naval de Estudios Estratégicos (ANEES) · Bogotá, Colombia
 
 [![Simulador](https://img.shields.io/badge/▶_Simulador-interactivo-185FA5?style=for-the-badge)](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/simulador/simulador_PM_interactivo_v6.html)
 [![Sitio](https://img.shields.io/badge/🌐_Sitio-del_proyecto-0D2A42?style=for-the-badge)](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/)
-[![ANEES](https://img.shields.io/badge/ARTÍCULO-CIENTÍFICO-993C1D?style=for-the-badge)](https://github.com/diegocabuya/Ciberpoder-y-Poder-Maritimo/docs/Articulo_Ciberpoder_Poder_Maritimo.pdf)
+[![ANEES](https://img.shields.io/badge/ARTÍCULO-CIENTÍFICO-993C1D?style=for-the-badge)](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/docs/Articulo_Ciberpoder_Poder_Maritimo.pdf)
 
 </div>
 
