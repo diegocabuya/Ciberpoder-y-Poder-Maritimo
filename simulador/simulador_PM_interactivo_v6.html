@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Simulador — Poder Marítimo Ampliado</title>
+<title>Simulator — Extended Maritime Power</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
 <style>
@@ -89,29 +89,29 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;heigh
 <body>
 
 <div class="header">
-  <div class="h-title">El <span>ciberpoder</span> como variable estructural del poder marítimo:<br>una actualización de su formulación conceptual</div>
+  <div class="h-title"><span>Cyber power</span> as a structural variable of maritime power:<br>a conceptual update of its formulation</div>
   <div class="h-author">Diego Edison Cabuya Padilla, PhD</div>
-  <div class="h-loc">Bogotá, Colombia · 2026</div>
+  <div class="h-loc">Bogota, Colombia · 2026</div>
   <div class="fgrid">
     <div class="fblock">
-      <div class="flbl">Fórmula general — Nivel 1</div>
+      <div class="flbl">General formula — Level 1</div>
       <div class="feq">PM = (IM × PN) × VE × SM<sup>γ</sup> × CP<sup>α</sup></div>
       <div class="vpills">
-        <span class="vp vi">IM — Intereses Marítimos</span>
-        <span class="vp vp2">PN — Poder Naval</span>
-        <span class="vp vv">VE — Voluntad Estratégica</span>
-        <span class="vp vs">SM — Seguridad Marítima</span>
-        <span class="vp vc">CP — Ciberpoder</span>
-        <span class="vp vx">γ — peso SM · α — IMCE</span>
+        <span class="vp vi">MI — Maritime Interests</span>
+        <span class="vp vp2">NP — Naval Power</span>
+        <span class="vp vv">SW — Strategic Will</span>
+        <span class="vp vs">MS — Maritime Security</span>
+        <span class="vp vc">CP — Cyber Power</span>
+        <span class="vp vx">γ — MS weight · α — SCMI</span>
       </div>
     </div>
     <div class="fblock b2">
-      <div class="flbl">Fórmula normalizada — Ec. (1b-1c)</div>
+      <div class="flbl">Normalized formula — Eq. (1b-1c)</div>
       <div class="feq">PM<sub>norm</sub> = [ PM ]<sup>1/n<sub>eff</sub></sup></div>
       <div class="fnote">n<sub>eff</sub> = 3 + γ + α &nbsp;·&nbsp; PM<sub>norm</sub> ∈ (0, 1]</div>
       <div class="vpills">
-        <span class="vp vx">Normalización: media geométrica — PNUD (2010); OCDE (2008)</span>
-        <span class="vp vx">La escala (0, 1] es comparable con el índice de poder marítimo de Vargas Suárez et al. (2021); este modelo añade el desglose por componente que aquel no distingue.</span>
+        <span class="vp vx">Normalization: geometric mean — UNDP (2010); OECD (2008)</span>
+        <span class="vp vx">The (0, 1] scale is comparable with the maritime power index of Vargas Suárez et al. (2021); this model adds the component breakdown that the latter does not distinguish.</span>
       </div>
     </div>
   </div>
@@ -120,34 +120,34 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;heigh
 <div class="main">
   <div class="row2">
     <div class="card">
-      <div class="ct">Escenarios de validación — perfiles genéricos</div>
+      <div class="ct">Validation scenarios — generic profiles</div>
       <div class="btn-row">
-        <button class="btn" id="b-pes" onclick="loadP('pes')">🔴 Perfil crítico</button>
-        <button class="btn" id="b-ref" onclick="loadP('ref')">🟡 Perfil de referencia</button>
-        <button class="btn" id="b-opt" onclick="loadP('opt')">🟢 Perfil consolidado</button>
+        <button class="btn" id="b-pes" onclick="loadP('pes')">🔴 Critical profile</button>
+        <button class="btn" id="b-ref" onclick="loadP('ref')">🟡 Reference profile</button>
+        <button class="btn" id="b-opt" onclick="loadP('opt')">🟢 Consolidated profile</button>
         <button class="btn" onclick="resetAll()" title="Reset">↺</button>
       </div>
-      <div style="font-size:8px;color:var(--text3);margin-bottom:2px">Comparar en gráficos:</div>
+      <div style="font-size:8px;color:var(--text3);margin-bottom:2px">Compare in charts:</div>
       <div class="cmp-row">
-        <span class="pill" id="p-pes" onclick="tCmp('pes')"><span class="dot" style="background:#e8504a"></span>Crítico</span>
-        <span class="pill" id="p-ref" onclick="tCmp('ref')"><span class="dot" style="background:#f0b429"></span>Referencia</span>
-        <span class="pill" id="p-opt" onclick="tCmp('opt')"><span class="dot" style="background:#2dd4a0"></span>Consolidado</span>
+        <span class="pill" id="p-pes" onclick="tCmp('pes')"><span class="dot" style="background:#e8504a"></span>Critical</span>
+        <span class="pill" id="p-ref" onclick="tCmp('ref')"><span class="dot" style="background:#f0b429"></span>Reference</span>
+        <span class="pill" id="p-opt" onclick="tCmp('opt')"><span class="dot" style="background:#2dd4a0"></span>Consolidated</span>
       </div>
     </div>
     <div class="card">
-      <div class="ct">Países de América — valores indicativos calibrados</div>
+      <div class="ct">Countries of the Americas — calibrated indicative values</div>
       <div class="btn-row" id="cbrow"></div>
-      <div style="font-size:8px;color:var(--text3);margin-bottom:2px">Comparar en gráficos:</div>
+      <div style="font-size:8px;color:var(--text3);margin-bottom:2px">Compare in charts:</div>
       <div class="cmp-row" id="cprow"></div>
     </div>
   </div>
 
   <div class="pm-hero">
-    <div class="pm-num" id="pm-num">0.433</div>
+    <div class="pm-num" id="pm-num">0.528</div>
     <div class="pm-info">
-      <div class="pml">Poder Marítimo Normalizado — PM<sub>norm</sub></div>
-      <div class="pm-badge" id="pm-badge">Moderado</div>
-      <div class="pm-desc" id="pm-desc">Potencia marítima en desarrollo con brechas estratégicas identificables</div>
+      <div class="pml">Normalized Maritime Power — MP<sub>norm</sub></div>
+      <div class="pm-badge" id="pm-badge">Moderate</div>
+      <div class="pm-desc" id="pm-desc">Developing maritime power with identifiable strategic gaps</div>
       <div class="pm-neff" id="pm-neff">n_eff = 4.25</div>
     </div>
   </div>
@@ -156,30 +156,30 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;heigh
 
   <div class="row2">
     <div class="card" style="overflow-y:auto;max-height:680px">
-      <div class="ct">Parámetros por componente — todos ∈ (0, 1]</div>
+      <div class="ct">Parameters by component — all ∈ (0, 1]</div>
       <div id="sliders"></div>
     </div>
     <div class="card">
-      <div class="ct">Radar de componentes — estado actual</div>
+      <div class="ct">Component radar — current state</div>
       <div class="ch230"><canvas id="radar"></canvas></div>
     </div>
   </div>
 
   <div class="card" style="margin-bottom:11px">
-    <div class="ct">Comparación · escenarios y/o países seleccionados</div>
+    <div class="ct">Comparison · selected scenarios and/or countries</div>
     <div class="cmp-ch">
       <div>
-        <div style="font-size:8px;color:var(--text3);margin-bottom:3px">PM<sub>norm</sub> — índice final · escala (0,1]</div>
+        <div style="font-size:8px;color:var(--text3);margin-bottom:3px">PM<sub>norm</sub> — final index · scale (0,1]</div>
         <div class="ch210"><canvas id="barpm"></canvas></div>
         <div class="legrow" id="pmleg"></div>
       </div>
       <div>
-        <div style="font-size:8px;color:var(--text3);margin-bottom:3px">Componentes — IM · PN · VE · SM · CP</div>
+        <div style="font-size:8px;color:var(--text3);margin-bottom:3px">Components — MI · NP · SW · MS · CP</div>
         <div class="ch210"><canvas id="bar"></canvas></div>
         <div class="legrow" id="bleg"></div>
       </div>
       <div>
-        <div style="font-size:8px;color:var(--text3);margin-bottom:3px">Radar — perfil de los 5 componentes</div>
+        <div style="font-size:8px;color:var(--text3);margin-bottom:3px">Radar — profile of the 5 components</div>
         <div class="ch210"><canvas id="rcmp"></canvas></div>
         <div class="legrow" id="rleg"></div>
       </div>
@@ -187,27 +187,27 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;heigh
   </div>
 
   <div class="card" style="margin-bottom:11px">
-    <div class="ct">Análisis de sensibilidad — variación +20% por variable (Tabla A2)</div>
+    <div class="ct">Sensitivity analysis — +20% variation per variable (Table A2)</div>
     <table class="stbl">
       <thead><tr><th>Variable</th><th>Valor base</th><th>+20% (efectivo)</th><th>ΔPM_norm</th><th>Elasticidad</th></tr></thead>
       <tbody id="sens-body"></tbody>
     </table>
     <div style="margin-top:6px;font-size:8.5px;color:var(--text2);line-height:1.7">
-      Bajo la normalización, los factores de peso directo (<b style="color:var(--im)">IM</b>, <b style="color:var(--pn)">PN</b>, <b style="color:var(--ve)">VE</b>) comparten la misma elasticidad 1.2<sup>1/n_eff</sup>−1, mientras que los exponentes <b>γ</b> y <b>α</b> amortiguan el efecto proporcional de <b style="color:var(--sm)">SM</b> y <b style="color:var(--cp)">CP</b>.
-      <span style="color:var(--text)">La prioridad estratégica del CP no deriva de su elasticidad puntual</span>, sino de tres propiedades convergentes: su <b>brecha</b> (valor base más bajo del sistema → mayor margen absoluto de mejora), su <b>concavidad</b> (α &lt; 1 → retornos marginales decrecientes, máximos a baja madurez cibernética) y su <b>carácter habilitante transversal</b> (su degradación compromete simultáneamente PN y SM), a lo que se suma la asimetría de costo y tiempo frente a transformar IM o PN.
+      Under normalization, the direct-weight factors (<b style="color:var(--im)">IM</b>, <b style="color:var(--pn)">PN</b>, <b style="color:var(--ve)">VE</b>) comparten la misma elasticidad 1.2<sup>1/n_eff</sup>−1, mientras que los exponentes <b>γ</b> y <b>α</b> dampen the proportional effect of <b style="color:var(--sm)">SM</b> y <b style="color:var(--cp)">CP</b>.
+      <span style="color:var(--text)">The strategic priority of CP does not derive from its point elasticity</span>, but from three convergent properties: its <b>brecha</b> (lowest baseline value in the system → greatest absolute margin for improvement), its <b>concavidad</b> (α &lt; 1 → decreasing marginal returns, highest at low cyber maturity) and its <b>transversal enabling character</b> (su degradación compromete simultáneamente PN y SM), a lo que se suma la asimetría de costo y tiempo frente a transformar IM o PN.
     </div>
   </div>
 
   <div class="card">
-    <div class="ct">Escala de interpretación · PM<sub>norm</sub> ∈ (0, 1]</div>
+    <div class="ct">Interpretation scale · MP<sub>norm</sub> ∈ (0, 1]</div>
     <table class="stbl">
-      <thead><tr><th>PM_norm</th><th>Nivel</th><th>Descripción estratégica</th></tr></thead>
+      <thead><tr><th>PM_norm</th><th>Level</th><th>Strategic description</th></tr></thead>
       <tbody>
-        <tr><td style="font-family:monospace;font-weight:600">0.81–1.00</td><td><span class="lb" style="background:rgba(45,212,160,.15);color:#2dd4a0">Alto</span></td><td style="color:var(--text2)">Potencia consolidada con proyección multidominio global</td></tr>
-        <tr><td style="font-family:monospace;font-weight:600">0.61–0.80</td><td><span class="lb" style="background:rgba(74,143,245,.15);color:#4a8ff5">Significativo</span></td><td style="color:var(--text2)">Potencia regional con capacidades multidominio desarrolladas</td></tr>
-        <tr><td style="font-family:monospace;font-weight:600">0.41–0.60</td><td><span class="lb" style="background:rgba(240,180,41,.15);color:#f0b429">Moderado</span></td><td style="color:var(--text2)">Potencia en desarrollo con brechas estratégicas identificables</td></tr>
-        <tr><td style="font-family:monospace;font-weight:600">0.21–0.40</td><td><span class="lb" style="background:rgba(232,80,74,.1);color:#e8504a">Bajo</span></td><td style="color:var(--text2)">Capacidad incipiente con vulnerabilidades estructurales dominantes</td></tr>
-        <tr><td style="font-family:monospace;font-weight:600">0.00–0.20</td><td><span class="lb" style="background:rgba(232,80,74,.2);color:#ff7875">Crítico</span></td><td style="color:var(--text2)">Vulnerabilidad marítima estructural — aprovechamiento mínimo del dominio</td></tr>
+        <tr><td style="font-family:monospace;font-weight:600">0.81–1.00</td><td><span class="lb" style="background:rgba(45,212,160,.15);color:#2dd4a0">Alto</span></td><td style="color:var(--text2)">Consolidated power with global multidomain projection</td></tr>
+        <tr><td style="font-family:monospace;font-weight:600">0.61–0.80</td><td><span class="lb" style="background:rgba(74,143,245,.15);color:#4a8ff5">Significativo</span></td><td style="color:var(--text2)">Regional power with developed multidomain capabilities</td></tr>
+        <tr><td style="font-family:monospace;font-weight:600">0.41–0.60</td><td><span class="lb" style="background:rgba(240,180,41,.15);color:#f0b429">Moderate</span></td><td style="color:var(--text2)">Developing power with identifiable strategic gaps</td></tr>
+        <tr><td style="font-family:monospace;font-weight:600">0.21–0.40</td><td><span class="lb" style="background:rgba(232,80,74,.1);color:#e8504a">Bajo</span></td><td style="color:var(--text2)">Incipient capability with dominant structural vulnerabilities</td></tr>
+        <tr><td style="font-family:monospace;font-weight:600">0.00–0.20</td><td><span class="lb" style="background:rgba(232,80,74,.2);color:#ff7875">Critical</span></td><td style="color:var(--text2)">Structural maritime vulnerability — minimal use of the domain</td></tr>
       </tbody>
     </table>
     <div style="margin-top:6px;font-size:8px;color:var(--text3);line-height:1.6">PM_norm = [(IM × PN) × VE × SM^γ × CP^α]^(1/n_eff) · n_eff = 3+γ+α · OCDE (2008); PNUD (2010) · Valores indicativos para validación del modelo</div>
@@ -222,13 +222,13 @@ const PR={
 };
 const CO={
   col:{l:'🇨🇴 Colombia',c:'#FFCD00',IM:.6,F:.79,P:.81,MDA:.76,mu:.55,VP:.51,VI:.49,VS:.4,w1:.5,w2:.3,w3:.2,CI:.66,TE:.56,BC:.57,a1:.25,a2:.2,a3:.55,CS:.45,CD:.4,CR:.37,CDb:.3,b1:.35,b2:.35,b3:.2,dl:.25,alpha:.55,gamma:.7},
-  bra:{l:'🇧🇷 Brasil',c:'#009C3B',IM:.78,F:.88,P:.9,MDA:.83,mu:.6,VP:.72,VI:.68,VS:.64,w1:.5,w2:.3,w3:.2,CI:.68,TE:.62,BC:.65,a1:.25,a2:.2,a3:.55,CS:.62,CD:.6,CR:.58,CDb:.55,b1:.35,b2:.35,b3:.2,dl:.45,alpha:.65,gamma:.72},
+  bra:{l:'🇧🇷 Brazil',c:'#009C3B',IM:.78,F:.88,P:.9,MDA:.83,mu:.6,VP:.72,VI:.68,VS:.64,w1:.5,w2:.3,w3:.2,CI:.68,TE:.62,BC:.65,a1:.25,a2:.2,a3:.55,CS:.62,CD:.6,CR:.58,CDb:.55,b1:.35,b2:.35,b3:.2,dl:.45,alpha:.65,gamma:.72},
   arg:{l:'🇦🇷 Argentina',c:'#74ACDF',IM:.68,F:.83,P:.85,MDA:.77,mu:.55,VP:.65,VI:.62,VS:.59,w1:.5,w2:.3,w3:.2,CI:.68,TE:.62,BC:.65,a1:.25,a2:.2,a3:.55,CS:.52,CD:.48,CR:.46,CDb:.42,b1:.35,b2:.35,b3:.2,dl:.35,alpha:.58,gamma:.7},
-  usa:{l:'🇺🇸 EE.UU.',c:'#3C3B6E',IM:.95,F:.99,P:.98,MDA:.97,mu:.8,VP:.92,VI:.9,VS:.88,w1:.45,w2:.35,w3:.2,CI:.88,TE:.85,BC:.82,a1:.35,a2:.3,a3:.35,CS:.95,CD:.96,CR:.95,CDb:.92,b1:.33,b2:.4,b3:.2,dl:.85,alpha:.85,gamma:.78},
-  can:{l:'🇨🇦 Canadá',c:'#D52B1E',IM:.78,F:.88,P:.91,MDA:.86,mu:.7,VP:.82,VI:.8,VS:.78,w1:.45,w2:.35,w3:.2,CI:.85,TE:.8,BC:.81,a1:.3,a2:.25,a3:.45,CS:.75,CD:.73,CR:.73,CDb:.75,b1:.35,b2:.35,b3:.2,dl:.35,alpha:.78,gamma:.72},
-  mex:{l:'🇲🇽 México',c:'#006847',IM:.72,F:.82,P:.84,MDA:.76,mu:.55,VP:.58,VI:.55,VS:.52,w1:.5,w2:.3,w3:.2,CI:.58,TE:.52,BC:.55,a1:.25,a2:.2,a3:.55,CS:.52,CD:.5,CR:.48,CDb:.42,b1:.35,b2:.35,b3:.2,dl:.35,alpha:.55,gamma:.7},
+  usa:{l:'🇺🇸 USA',c:'#3C3B6E',IM:.95,F:.99,P:.98,MDA:.97,mu:.8,VP:.92,VI:.9,VS:.88,w1:.45,w2:.35,w3:.2,CI:.88,TE:.85,BC:.82,a1:.35,a2:.3,a3:.35,CS:.95,CD:.96,CR:.95,CDb:.92,b1:.33,b2:.4,b3:.2,dl:.85,alpha:.85,gamma:.78},
+  can:{l:'🇨🇦 Canada',c:'#D52B1E',IM:.78,F:.88,P:.91,MDA:.86,mu:.7,VP:.82,VI:.8,VS:.78,w1:.45,w2:.35,w3:.2,CI:.85,TE:.8,BC:.81,a1:.3,a2:.25,a3:.45,CS:.75,CD:.73,CR:.73,CDb:.75,b1:.35,b2:.35,b3:.2,dl:.35,alpha:.78,gamma:.72},
+  mex:{l:'🇲🇽 Mexico',c:'#006847',IM:.72,F:.82,P:.84,MDA:.76,mu:.55,VP:.58,VI:.55,VS:.52,w1:.5,w2:.3,w3:.2,CI:.58,TE:.52,BC:.55,a1:.25,a2:.2,a3:.55,CS:.52,CD:.5,CR:.48,CDb:.42,b1:.35,b2:.35,b3:.2,dl:.35,alpha:.55,gamma:.7},
   chl:{l:'🇨🇱 Chile',c:'#D52B1E',IM:.68,F:.84,P:.87,MDA:.8,mu:.58,VP:.75,VI:.72,VS:.69,w1:.45,w2:.35,w3:.2,CI:.74,TE:.7,BC:.69,a1:.3,a2:.25,a3:.45,CS:.55,CD:.53,CR:.52,CDb:.48,b1:.35,b2:.35,b3:.2,dl:.4,alpha:.6,gamma:.7},
-  per:{l:'🇵🇪 Perú',c:'#D91023',IM:.6,F:.77,P:.8,MDA:.71,mu:.5,VP:.52,VI:.5,VS:.48,w1:.5,w2:.3,w3:.2,CI:.62,TE:.56,BC:.56,a1:.25,a2:.2,a3:.55,CS:.38,CD:.36,CR:.35,CDb:.28,b1:.35,b2:.35,b3:.2,dl:.22,alpha:.45,gamma:.68},
+  per:{l:'🇵🇪 Peru',c:'#D91023',IM:.6,F:.77,P:.8,MDA:.71,mu:.5,VP:.52,VI:.5,VS:.48,w1:.5,w2:.3,w3:.2,CI:.62,TE:.56,BC:.56,a1:.25,a2:.2,a3:.55,CS:.38,CD:.36,CR:.35,CDb:.28,b1:.35,b2:.35,b3:.2,dl:.22,alpha:.45,gamma:.68},
   ecu:{l:'🇪🇨 Ecuador',c:'#FFD100',IM:.48,F:.7,P:.73,MDA:.67,mu:.5,VP:.48,VI:.45,VS:.42,w1:.5,w2:.3,w3:.2,CI:.55,TE:.5,BC:.51,a1:.25,a2:.2,a3:.55,CS:.33,CD:.3,CR:.28,CDb:.22,b1:.35,b2:.35,b3:.2,dl:.18,alpha:.42,gamma:.68},
   uru:{l:'🇺🇾 Uruguay',c:'#63CEFA',IM:.42,F:.67,P:.71,MDA:.64,mu:.52,VP:.68,VI:.65,VS:.62,w1:.45,w2:.35,w3:.2,CI:.75,TE:.7,BC:.71,a1:.25,a2:.25,a3:.5,CS:.45,CD:.42,CR:.4,CDb:.35,b1:.35,b2:.35,b3:.2,dl:.28,alpha:.52,gamma:.65},
   ven:{l:'🇻🇪 Venezuela',c:'#CC0001',IM:.55,F:.74,P:.77,MDA:.68,mu:.5,VP:.28,VI:.25,VS:.22,w1:.5,w2:.3,w3:.2,CI:.42,TE:.36,BC:.36,a1:.25,a2:.2,a3:.55,CS:.22,CD:.18,CR:.16,CDb:.12,b1:.35,b2:.35,b3:.2,dl:.1,alpha:.38,gamma:.65}
@@ -236,32 +236,32 @@ const CO={
 const VK=['IM','PN','VE','SM','CP'];
 const VC={IM:'#4a8ff5',PN:'#9b7ff5',VE:'#2dd4a0',SM:'#f0b429',CP:'#e8504a'};
 const LV=[
-  {mn:.81,mx:1.01,l:'Alto',d:'Potencia consolidada con proyección multidominio global',c:'#2dd4a0'},
-  {mn:.61,mx:.81,l:'Significativo',d:'Potencia regional con capacidades multidominio desarrolladas',c:'#4a8ff5'},
-  {mn:.41,mx:.61,l:'Moderado',d:'Potencia en desarrollo con brechas estratégicas identificables',c:'#f0b429'},
-  {mn:.21,mx:.41,l:'Bajo',d:'Capacidad incipiente con vulnerabilidades estructurales dominantes',c:'#e8504a'},
-  {mn:0,mx:.21,l:'Crítico',d:'Vulnerabilidad marítima estructural — aprovechamiento mínimo',c:'#ff7875'}
+  {mn:.81,mx:1.01,l:'Alto',d:'Consolidated power with global multidomain projection',c:'#2dd4a0'},
+  {mn:.61,mx:.81,l:'Significativo',d:'Regional power with developed multidomain capabilities',c:'#4a8ff5'},
+  {mn:.41,mx:.61,l:'Moderate',d:'Developing power with identifiable strategic gaps',c:'#f0b429'},
+  {mn:.21,mx:.41,l:'Bajo',d:'Incipient capability with dominant structural vulnerabilities',c:'#e8504a'},
+  {mn:0,mx:.21,l:'Critical',d:'Vulnerabilidad marítima estructural — aprovechamiento mínimo',c:'#ff7875'}
 ];
 const GR=[
-  {k:'IM',n:'Intereses Marítimos',c:'#4a8ff5',e:'IM = Σwᵢ·IMᵢ ; IM∈(0,1]',s:[{l:'Índice IM',v:[{k:'IM',l:'IM',d:'Sub-índice ponderado IM nacionales'}]}]},
-  {k:'PN',n:'Poder Naval',c:'#9b7ff5',e:'PN = F × P × MDA^μ ; PN∈(0,1]',s:[
-    {l:'Componentes F · P · MDA',v:[{k:'F',l:'F',d:'Fuerza (plataformas·C2·CD táctica·logística)'},{k:'P',l:'P',d:'Posición (geografía·bases·rutas)'},{k:'MDA',l:'MDA',d:'Maritime Domain Awareness'}]},
-    {l:'Parámetro μ',v:[{k:'mu',l:'μ',d:'Exponente calibración MDA en PN'}]}
+  {k:'IM',n:'Maritime Interests',c:'#4a8ff5',e:'IM = Σwᵢ·IMᵢ ; IM∈(0,1]',s:[{l:'MI index',v:[{k:'IM',l:'IM',d:'Weighted sub-index of national MI'}]}]},
+  {k:'PN',n:'Naval Power',c:'#9b7ff5',e:'PN = F × P × MDA^μ ; PN∈(0,1]',s:[
+    {l:'Components F · P · MDA',v:[{k:'F',l:'F',d:'Force (platforms·C2·tactical CDctica·logística)'},{k:'P',l:'P',d:'Position (geography·bases·routes)'},{k:'MDA',l:'MDA',d:'Maritime Domain Awareness'}]},
+    {l:'Parámetro μ',v:[{k:'mu',l:'μ',d:'MDA calibration exponent in NP'}]}
   ]},
-  {k:'VE',n:'Voluntad Estratégica',c:'#2dd4a0',e:'VE = (VP^w₁·VI^w₂·VS^w₃)^(1/Σw) ; VE∈(0,1]',s:[
-    {l:'Variables VP · VI · VS',v:[{k:'VP',l:'VP',d:'Voluntad Política'},{k:'VI',l:'VI',d:'Voluntad Institucional'},{k:'VS',l:'VS',d:'Voluntad Social / Conciencia Marítima'}]},
-    {l:'Pesos w₁ w₂ w₃',v:[{k:'w1',l:'w₁',d:'Peso de VP'},{k:'w2',l:'w₂',d:'Peso de VI'},{k:'w3',l:'w₃',d:'Peso de VS'}]}
+  {k:'VE',n:'Strategic Will',c:'#2dd4a0',e:'VE = (VP^w₁·VI^w₂·VS^w₃)^(1/Σw) ; VE∈(0,1]',s:[
+    {l:'Variables VP · VI · VS',v:[{k:'VP',l:'VP',d:'Political Will'},{k:'VI',l:'VI',d:'Institutional Will'},{k:'VS',l:'VS',d:'Social Will / Maritime Consciousness'}]},
+    {l:'Pesos w₁ w₂ w₃',v:[{k:'w1',l:'w₁',d:'Weight of PW'},{k:'w2',l:'w₂',d:'Weight of IW'},{k:'w3',l:'w₃',d:'Weight of SocW'}]}
   ]},
-  {k:'SM',n:'Seguridad Marítima',c:'#f0b429',e:'SM = (CI^a₁·TE^a₂·BC^a₃)^(1/Σa) ; SM∈(0,1]',s:[
-    {l:'Dimensiones CI · TE · BC',v:[{k:'CI',l:'CI',d:'Conflictos Interestatales / zona gris'},{k:'TE',l:'TE',d:'Terrorismo y Extremismo marítimo'},{k:'BC',l:'BC',d:'Crimen Azul (narcotráfico·piratería·IUU)'}]},
-    {l:'Pesos a₁ a₂ a₃',v:[{k:'a1',l:'a₁',d:'Peso de CI en índice SM'},{k:'a2',l:'a₂',d:'Peso de TE en índice SM'},{k:'a3',l:'a₃',d:'Peso de BC en índice SM'}]}
+  {k:'SM',n:'Maritime Security',c:'#f0b429',e:'SM = (CI^a₁·TE^a₂·BC^a₃)^(1/Σa) ; SM∈(0,1]',s:[
+    {l:'Dimensiones CI · TE · BC',v:[{k:'CI',l:'CI',d:'Interstate Conflicts / gray zone'},{k:'TE',l:'TE',d:'Maritime Terrorism and Extremism'},{k:'BC',l:'BC',d:'Blue Crime (drug trafficking·piracytería·IUU)'}]},
+    {l:'Pesos a₁ a₂ a₃',v:[{k:'a1',l:'a₁',d:'Weight of IC in MS index'},{k:'a2',l:'a₂',d:'Weight of TE in MS index'},{k:'a3',l:'a₃',d:'Weight of BC in MS index'}]}
   ]},
-  {k:'CP',n:'Ciberpoder',c:'#e8504a',e:'CP = mín{1, (β₁·CS_m+β₂·CD_m+β₃·CR_m)·(1+δ·CDb)} ; CP∈(0,1]',s:[
-    {l:'Capacidades CS · CD · CR · CDb',v:[{k:'CS',l:'CS_m',d:'Ciberseguridad Marítima'},{k:'CD',l:'CD_m',d:'Ciberdefensa Marítima (estratégico)'},{k:'CR',l:'CR_m',d:'Ciberresiliencia Marítima'},{k:'CDb',l:'CDb',d:'Ciberdiplomacia (proyección)'}]},
-    {l:'Pesos β₁ β₂ β₃ y δ',v:[{k:'b1',l:'β₁',d:'Peso de CS_m en CP'},{k:'b2',l:'β₂',d:'Peso de CD_m en CP'},{k:'b3',l:'β₃',d:'Peso de CR_m en CP'},{k:'dl',l:'δ',d:'Efectividad CDb como amplificador'}]}
+  {k:'CP',n:'Cyber Power',c:'#e8504a',e:'CP = mín{1, (β₁·CS_m+β₂·CD_m+β₃·CR_m)·(1+δ·CDb)} ; CP∈(0,1]',s:[
+    {l:'Capacidades CS · CD · CR · CDb',v:[{k:'CS',l:'CS_m',d:'Maritime Cyber Security'},{k:'CD',l:'CD_m',d:'Maritime Cyber Defense (strategicégico)'},{k:'CR',l:'CR_m',d:'Maritime Cyber Resilience'},{k:'CDb',l:'CDb',d:'Cyber Diplomacy (proyección)'}]},
+    {l:'Pesos β₁ β₂ β₃ y δ',v:[{k:'b1',l:'β₁',d:'Weight of CS_m en CP'},{k:'b2',l:'β₂',d:'Weight of CD_m en CP'},{k:'b3',l:'β₃',d:'Weight of CR_m en CP'},{k:'dl',l:'δ',d:'Efectividad CDb como amplificador'}]}
   ]},
   {k:'PAR',n:'Parámetros del modelo',c:'#8891a8',e:'n_eff = 3+γ+α ; PM_norm = [PM]^(1/n_eff)',s:[
-    {l:'α y γ',v:[{k:'alpha',l:'α',d:'IMCE — Madurez Cibernética Estratégica'},{k:'gamma',l:'γ',d:'Peso global SM en el sistema PM'}]}
+    {l:'α y γ',v:[{k:'alpha',l:'α',d:'SCMI — Madurez Cibernética Estratégica'},{k:'gamma',l:'γ',d:'Peso global SM en el sistema PM'}]}
   ]}
 ];
 let ST={...CO.col};
@@ -374,7 +374,7 @@ function updSens(){
     const v0=d[r.k],v1=Math.min(1,v0*1.2);
     const dpm=(Math.pow(v1/v0,r.w/neff)-1)*100;
     const sat=v1<v0*1.2-1e-9;
-    const el=r.w===1?'Máxima':(r.k==='SM'?'Amortiguada (γ < 1)':'Amortiguada (α < 1)');
+    const el=r.w===1?'Maximum':(r.k==='SM'?'Amortiguada (γ < 1)':'Amortiguada (α < 1)');
     return `<tr><td style="font-weight:600;color:${r.c}">${r.lbl}</td><td style="font-family:monospace">${v0.toFixed(2)}</td><td style="font-family:monospace">${v1.toFixed(2)}${sat?' <span style="color:var(--text3)" title="Saturado por el tope CP ≤ 1">⌈sat⌉</span>':''}</td><td style="font-family:monospace;font-weight:700">+${dpm.toFixed(1)}%</td><td style="color:var(--text2)">${el}</td></tr>`;
   }).join('');
 }
@@ -397,7 +397,7 @@ function updBar(){
     pmC.data.labels=[];pmC.data.datasets=[];pmC.update();
     bC.data.datasets=[];bC.update();
     rCC.data.datasets=[];rCC.update();
-    document.getElementById('pmleg').innerHTML='<span style="font-size:9px;color:var(--text3);font-style:italic">Seleccione escenarios o países para comparar</span>';
+    document.getElementById('pmleg').innerHTML='<span style="font-size:9px;color:var(--text3);font-style:italic">Select scenarios or countries to compare</span>';
     document.getElementById('bleg').innerHTML='';
     document.getElementById('rleg').innerHTML='';
     return;
