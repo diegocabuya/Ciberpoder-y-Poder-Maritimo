@@ -2,125 +2,109 @@
 
 # El ciberpoder como variable estructural del poder marítimo
 
-### *Una actualización de su formulación conceptual*
+### *Un modelo multiplicativo normalizado para la evaluación multidominio del poder marítimo*
 
-**CF Diego Edison Cabuya Padilla, PhD**
-Academia Naval de Estudios Estratégicos (ANEES) · Bogotá, Colombia
+**Diego E. Cabuya-Padilla** · **Sergio Uribe-Cáceres** · **Carlos A. Castaneda-Marroquin**
 
-[![Simulador](https://img.shields.io/badge/▶_Simulador-interactivo-185FA5?style=for-the-badge)](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/simulador/simulador_PM_interactivo_v6.html)
-[![Sitio](https://img.shields.io/badge/🌐_Sitio-del_proyecto-0D2A42?style=for-the-badge)](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/)
-[![ANEES](https://img.shields.io/badge/ARTÍCULO-CIENTÍFICO-993C1D?style=for-the-badge)](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/docs/Articulo_Ciberpoder_Poder_Maritimo.pdf)
+Academia Naval de Estudios Estratégicos, Armada de Colombia · Escuela Superior de Guerra «General Rafael Reyes Prieto» · Escuela Naval de Cadetes «Almirante Padilla» (NAVTEG)
+
+*Manuscrito en revisión — IEEE Access (versión revisada, octubre de 2026)*
+
+[![Sitio del proyecto (ES)](https://img.shields.io/badge/🌐_Sitio_del_proyecto-español-0D2A42?style=for-the-badge)](https://diegocabuya.github.io/Cyber_Power_and_Maritime_Power/?lang=es)
+[![Simulador (ES)](https://img.shields.io/badge/▶_Simulador-interactivo-185FA5?style=for-the-badge)](https://diegocabuya.github.io/Cyber_Power_and_Maritime_Power/simulator/simulator.html?lang=es)
+[![Repositorio canónico](https://img.shields.io/badge/📦_Materiales-repositorio_en_inglés-0F6E56?style=for-the-badge)](https://github.com/diegocabuya/Cyber_Power_and_Maritime_Power)
 
 </div>
 
 ---
 
-## 📖 Resumen
+> **Un solo sitio, dos idiomas.** Desde octubre de 2026 el proyecto mantiene **una única página y un único simulador, bilingües (EN/ES)**, alojados en el repositorio en inglés. Este repositorio conserva la versión en español del artículo y redirige al sitio común con el idioma español activado. Los materiales de apoyo del manuscrito —script de verificación, búsqueda bibliográfica documentada, figuras— viven en el repositorio canónico:
+> **https://github.com/diegocabuya/Cyber_Power_and_Maritime_Power**
 
-La formulación clásica del poder marítimo —el producto de los **intereses marítimos** y el **poder naval**— resulta insuficiente para explicar las dinámicas de los entornos marítimos digitalizados. Este proyecto la actualiza incorporando el **ciberpoder**, la **voluntad estratégica** y la **seguridad marítima** como variables estructurales, con una normalización que hace el resultado directamente interpretable en una escala de cinco niveles.
+## Resumen
 
-El caso colombiano se emplea como ilustración: ancla el resultado en la escala del índice más sistemático disponible y, sobre esa base, lo **descompone** para mostrar que el ciberpoder es el vector de inversión más eficiente para las potencias medias regionales.
+La formulación clásica del poder marítimo —el producto de los **intereses marítimos** y el **poder naval**— resulta insuficiente para explicar las dinámicas de los entornos marítimos digitalizados. Este artículo propone una formulación extendida que incorpora el **ciberpoder**, la **voluntad estratégica** y la **seguridad marítima** como variables estructurales del poder marítimo. El modelo adopta una estructura multiplicativa normalizada en la que el colapso de cualquier dimensión restringe el agregado, y cuyo resultado se sitúa en (0, 1], lo que permite una escala de cinco niveles directamente interpretable.
 
-> **Abstract (EN).** The classical formulation of sea power —the product of maritime interests and naval power— is insufficient to explain the dynamics of digitalized maritime environments. This work updates it by incorporating cyber power, strategic will, and maritime security as structural variables, within a normalized multiplicative model that yields interpretable results on a five-level scale. The Colombian case anchors the result on the scale of the most systematic available index and decomposes it to show that cyber power is the most efficient investment vector for middle powers.
+La formulación se **verifica** en tres etapas —propiedades lógico-matemáticas, análisis de sensibilidad y perfiles construidos— y un análisis de sensibilidad global identifica la seguridad marítima (su valor y su peso) como la principal fuente de incertidumbre; **la calibración y la validación externa se distinguen de la verificación y se dejan para trabajo futuro**. Colombia se emplea como caso ilustrativo: tomando su puesto en seguridad marítima del índice de poder marítimo más sistemático disponible en la literatura latinoamericana y valores ilustrativos para los demás componentes, el modelo sitúa al país en el nivel Moderado y descompone el resultado para mostrar qué componentes concentran las mayores brechas; un corolario enuncia la condición de costes relativos bajo la cual el ciberpoder sería el vector de inversión más eficiente.
 
----
+## El modelo
 
-## 🧮 La fórmula
-
-**Nivel 1 — expresión general normalizada:**
+**Nivel 1 — expresión general normalizada (Ecs. 1–3):**
 
 ```
-PM_norm = [ (IM × PN) × VE × SM^γ × CP^α ]^(1/n_eff)        con  n_eff = 2 + γ + α
+MP_norm = [ (MI × NP) × SW × MS^γ × CP^α ]^(1/n_eff)        con  n_eff = 3 + γ + α
 ```
 
-| Sigla | Variable | Rol |
-|:-----:|----------|-----|
-| **IM** | Intereses Marítimos | El fin que da sentido al poder marítimo |
-| **PN** | Poder Naval | El instrumento (Fuerza × Posición × MDA) |
-| **VE** | Voluntad Estratégica | La decisión de emplearlo (política · institucional · social) |
-| **SM** | Seguridad Marítima | La condición del entorno (exponente γ) |
-| **CP** | Ciberpoder | La variable estructural propuesta (exponente α) |
+| Símbolo (artículo en inglés) | Equivalente en español | Variable | Papel |
+|:------:|:------:|----------|------|
+| **MI** | IM | Intereses marítimos | El fin que da sentido al poder marítimo (Ec. 4: subíndice ponderado) |
+| **NP** | PN | Poder naval | El instrumento: Fuerza × Posición × MDA^μ (Ec. 5) |
+| **SW** | VE | Voluntad estratégica | Multiplicador de todo el sistema: política · institucional · social (Ec. 6) |
+| **MS** | SM | Seguridad marítima | Condición del entorno — incidencia de amenazas, no capacidades (Ec. 7); γ es su peso |
+| **CP** | CP | Ciberpoder | Variable estructural: ciberseguridad, ciberdefensa estratégica, capacidad de recuperación, amplificada por la ciberdiplomacia (Ec. 8); α es **el peso de la dependencia cibernética**, no una medida de capacidad |
 
-La escala de interpretación tiene cinco niveles: **Crítico** (0.00–0.20), **Bajo** (0.21–0.40), **Moderado** (0.41–0.60), **Significativo** (0.61–0.80) y **Alto** (0.81–1.00).
+La normalización es una media geométrica ponderada con pesos ω<sub>MI</sub> = ω<sub>NP</sub> = ω<sub>SW</sub> = 1/n<sub>eff</sub>, ω<sub>MS</sub> = γ/n<sub>eff</sub>, ω<sub>CP</sub> = α/n<sub>eff</sub>. **Proposición 1:** MP<sub>norm</sub> = G<sup>1−w</sup> · CP<sup>w</sup>, donde G es la media geométrica del resto del sistema y w = α/n<sub>eff</sub>; por tanto, subir CP siempre sube el índice, mientras que subir α solo lo sube si CP > G, y el índice es estrictamente cóncavo en cada componente para cualquier α > 0. **Corolario 1:** el ciberpoder es el vector de inversión más eficiente si y solo si c<sub>k</sub>/c<sub>CP</sub> > (ω<sub>k</sub>/X<sub>k</sub>)/(ω<sub>CP</sub>/CP) para cada otro componente k — una condición comprobable sobre costes unitarios relativos, no un resultado.
 
----
+Escala de interpretación: **Crítico** (0,00–0,20), **Bajo** (0,21–0,40), **Moderado** (0,41–0,60), **Significativo** (0,61–0,80), **Alto** (0,81–1,00).
 
-## 🚀 Empieza aquí
+## Caso de referencia: Colombia
 
-- **[▶ Abrir el simulador interactivo](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/simulador/simulador_PM_interactivo_v6.html)** — 27 controles, 11 países de América precalibrados y visualizaciones en vivo.
-- **[🌐 Visitar el sitio del proyecto](https://diegocabuya.github.io/Ciberpoder-y-Poder-Maritimo/)** — portada con todo el material: artículo, presentación, infografía y las láminas de ecuaciones.
+| | MI | NP | SW | MS | CP | α | γ | MP<sub>norm</sub> |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Valor | 0,60 | 0,55 | 0,48 | **0,24** | 0,40 | 0,55 | 0,70 | **0,455** (Moderado) |
 
----
+Solo **MS** procede de una fuente externa: el puesto 75 de Colombia entre 99 Estados en el índice de seguridad marítima de Vargas-Suárez et al. (2021), convertido en percentil de posición, (99 − 75)/98 ≈ 0,24. Los demás valores y los parámetros son elecciones ilustrativas de los autores, fijadas directamente en el Nivel 1. G = 0,464 > CP, así que una α mayor baja el índice (0,464 cuando α → 0; 0,450 con α = 1). Umbrales de coste del Corolario 1: 1,21 (MI), 1,32 (NP), 1,52 (SW), 2,12 (MS). El resultado es robusto a una incertidumbre moderada (±0,10) en los insumos, pero no a una grande (±0,20).
 
-## 📂 Contenido del repositorio
+## Empieza aquí
+
+- **[🌐 Sitio del proyecto en español](https://diegocabuya.github.io/Cyber_Power_and_Maritime_Power/?lang=es)** — resumen, materiales, láminas de ecuaciones, reproducibilidad y notas de la revisión. El selector EN/ES de la cabecera cambia el idioma de toda la página.
+- **[▶ Simulador interactivo en español](https://diegocabuya.github.io/Cyber_Power_and_Maritime_Power/simulator/simulator.html?lang=es)** — entradas de Nivel 1 y desagregación opcional de Nivel 2, elasticidades, retornos marginales, la condición de coste del Corolario 1, banda de incertidumbre por Monte Carlo y gráficas de comparación. Precargado con el caso colombiano y los perfiles construidos del artículo.
+- **[🧪 Script de verificación](https://github.com/diegocabuya/Cyber_Power_and_Maritime_Power/blob/main/verification/verify_model.py)** — regenera todas las cifras de las secciones de verificación y del caso de estudio (Tablas 4–7, Proposición 1, Corolario 1). Solo biblioteca estándar de Python:
+
+  ```bash
+  python3 verification/verify_model.py 300000   # corrida canónica citada en el artículo (~1 min)
+  ```
+
+- **[🔎 Búsqueda bibliográfica documentada](https://github.com/diegocabuya/Cyber_Power_and_Maritime_Power/tree/main/search)** — cadenas de búsqueda, registros crudos (OpenAlex y Scopus, 13 de octubre de 2026, 2014–2026) y el registro de cribado de los 812 registros únicos.
+
+## Contenido de este repositorio
 
 ```
 .
-├── index.html                     ← Portada del proyecto (GitHub Pages)
-├── simulador/
-│   └── simulador_PM_interactivo_v6.html
+├── index.html                           ← Redirige al sitio bilingüe con el español activado
 ├── docs/
-│   └── Articulo_Ciberpoder_Poder_Maritimo.pdf   ← Artículo completo en PDF
-├── presentacion/
-│   ├── Presentacion_PM_Ciberpoder_v6.pdf   ← 17 láminas
-│   └── Diapositivas_Simulador_PM.pdf       ← guía del simulador
-├── infografia/
-│   └── Infografia_PM_Ciberpoder.pdf / .png
-└── figuras/
-    ├── ecuaciones/   ← 8 láminas didácticas (una por ecuación)
-    └── esquemas/     ← arquitectura de dos niveles y síntesis
+│   └── Articulo_Poder_Maritimo_y_Ciberpoder_Diego_Cabuya.pdf   ← Versión en español (7-sep-2026, anterior a la revisión)
+├── archivo/2026-08_pre-revision/        ← Simulador v6, figuras, infografía y presentación anteriores a la revisión
+├── LICENSE
+└── README.md
 ```
 
-| Material | Formato | Descripción |
-|----------|---------|-------------|
-| **Artículo** | PDF | Documento completo del artículo |
-| **Simulador** | HTML | Modelo interactivo con 27 controles y 11 países |
-| **Presentación** | PDF | 17 láminas de exposición ejecutiva |
-| **Infografía** | PDF / PNG | Síntesis en una página tamaño carta |
-| **Ecuaciones** | PNG | 8 láminas didácticas del modelo, variable por variable |
+> **Sobre la versión en español del artículo.** El PDF de `docs/` es la versión del 7 de septiembre de 2026, **anterior a la revisión de octubre**: conserva la notación IM/PN/VE/SM/CP, el valor SM = 0,59 para Colombia y las afirmaciones que el manuscrito en inglés revisado corrigió (véase la sección *Qué cambió en la revisión* del sitio). Se publicará aquí la versión actualizada cuando esté lista. Los materiales de `archivo/` se conservan solo como registro.
 
----
+## Qué cambió en la revisión de octubre de 2026
 
-## 🎛️ Sobre el simulador
+| Tema | Versión enviada | Versión revisada |
+|---|---|---|
+| α | Índice de madurez cibernética y exponente a la vez | **Peso de la dependencia cibernética**; la madurez se lee en CP, en cinco tramos (Proposición 1) |
+| Concavidad | Atribuida a α < 1 | Vale para cualquier α > 0: el exponente normalizado siempre es menor que uno, para todos los componentes |
+| Eficiencia de la inversión | «El ciberpoder es el vector de inversión más eficiente» | **Retirado**; sustituido por la condición de costes del Corolario 1 |
+| Colombia | SM = 0,59 (cuota porcentual), MP<sub>norm</sub> = 0,53, «misma escala» que el índice de referencia | MS = 0,24 (percentil de posición), MP<sub>norm</sub> = 0,455; sin escala común, sin calibración, sin validación |
+| Verificación | «Validación» | Verificación, calibración y validación externa distinguidas (Sargent, 2011); análisis de incertidumbre con índices de Sobol'; protocolo de calibración y validación externa; tabla de operacionalización |
+| Componentes | Ciberresiliencia (CR<sub>m</sub>); ciberdiplomacia en CP y en la voluntad política; Σβ = 0,90 en el simulador | **Capacidad de recuperación marítima (RC<sub>m</sub>)**; ciberdiplomacia solo en CP; fronteras operacionales explícitas; Σβ = 1 |
+| Literatura | Búsqueda sin registro | Búsqueda documentada en OpenAlex y Scopus; se discuten las medidas compuestas existentes (todas aditivas, ninguna con ciberpoder) |
 
-El simulador permite operar el modelo completo de dos niveles: modifica cualquiera de los **27 parámetros** y observa cómo cambia el poder marítimo normalizado y su perfil por componente en tiempo real. Incluye tres perfiles genéricos (crítico, referencia, consolidado) y once países de América precalibrados para uso comparativo.
+## Cómo citar
 
-Está construido en HTML + JavaScript con [Chart.js](https://www.chartjs.org/); no requiere instalación: se abre en cualquier navegador moderno.
+> Cabuya-Padilla, D. E., Uribe-Cáceres, S. y Castaneda-Marroquin, C. A. (2026). *Cyber power as a structural variable of maritime power: A normalized multiplicative model for multidomain assessment of maritime power* [El ciberpoder como variable estructural del poder marítimo: un modelo multiplicativo normalizado para la evaluación multidominio del poder marítimo]. Manuscrito en revisión, IEEE Access. Materiales de apoyo: https://github.com/diegocabuya/Cyber_Power_and_Maritime_Power
 
----
+## Licencia
 
-## 📌 Cómo citar
-
-**APA (7.ª edición):**
-
-> Cabuya Padilla, D. E. (2026). *El ciberpoder como variable estructural del poder marítimo: una actualización de su formulación conceptual* [Manuscrito de investigación]. Academia Naval de Estudios Estratégicos, Bogotá.
-
-**BibTeX:**
-
-```bibtex
-@unpublished{cabuya2026ciberpoder,
-  author = {Cabuya Padilla, Diego Edison},
-  title  = {El ciberpoder como variable estructural del poder marítimo:
-            una actualización de su formulación conceptual},
-  note   = {Manuscrito de investigación},
-  school = {Academia Naval de Estudios Estratégicos, Bogotá},
-  year   = {2026}
-}
-```
-
----
-
-## 📜 Licencia
-
-Los **materiales de investigación** (artículo, figuras, infografía y presentación) se comparten bajo licencia
-[**CC BY-NC-SA 4.0**](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es) — atribución, uso no comercial y compartir bajo la misma licencia.
-El **código del simulador y del sitio** se comparte bajo licencia [**MIT**](https://opensource.org/licenses/MIT).
+Los **materiales de investigación** se comparten bajo licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es) y el **código** bajo licencia [MIT](https://opensource.org/licenses/MIT), según el archivo [`LICENSE`](LICENSE). Los materiales del repositorio en inglés se publican bajo CC BY 4.0.
 
 ---
 
 <div align="center">
 
-**Academia Naval de Estudios Estratégicos** · Armada Nacional de Colombia · Bogotá
-Proyecto de investigación en Poder Marítimo y Ciberpoder
+**Academia Naval de Estudios Estratégicos** · Armada de Colombia · Bogotá · 2026
 
 </div>
