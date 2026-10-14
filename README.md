@@ -54,7 +54,7 @@ Solo **SM** procede de una fuente externa: el puesto 75 de Colombia entre 99 Est
 
 ## Empieza aquí
 
-- **[📄 Artículo en español, versión revisada](docs/Articulo_Poder_Maritimo_y_Ciberpoder_v2_revisado_2026-10.docx)** — formato de la Revista Maris et Belli, con los cambios de la revisión de octubre de 2026 (`.docx`; el PDF se añadirá aquí al exportarlo desde Word).
+- **[📄 Artículo en español, versión revisada (PDF)](docs/Articulo_Poder_Maritimo_y_Ciberpoder_v2_revisado_2026-10.pdf)** · [`.docx`](docs/Articulo_Poder_Maritimo_y_Ciberpoder_v2_revisado_2026-10.docx) — formato de la Revista Maris et Belli, con los cambios de la revisión de octubre de 2026.
 - **[🌐 Sitio del proyecto en español](https://diegocabuya.github.io/Cyber_Power_and_Maritime_Power/?lang=es)** — resumen, materiales, láminas de ecuaciones, reproducibilidad y notas de la revisión.
 - **[▶ Simulador interactivo en español](https://diegocabuya.github.io/Cyber_Power_and_Maritime_Power/simulator/simulator.html?lang=es)** — entradas de Nivel 1 y desagregación opcional de Nivel 2, elasticidades, retornos marginales, la condición de coste del Corolario 1, banda de incertidumbre por Monte Carlo y gráficas de comparación.
 - **[🎞️ Presentación](presentacion/Presentacion_PM_Ciberpoder.pdf)** (18 diapositivas), **[guía del simulador](presentacion/Diapositivas_Simulador_PM.pdf)** (3 diapositivas) e **[infografía](infografia/Infografia_PM_Ciberpoder.pdf)**, regeneradas con la versión revisada.
@@ -72,7 +72,7 @@ Solo **SM** procede de una fuente externa: el puesto 75 de Colombia entre 99 Est
 .
 ├── index.html                           ← Redirige al sitio bilingüe con el español activado
 ├── docs/
-│   └── Articulo_..._v2_revisado_2026-10.docx   ← Artículo en español, versión revisada (octubre de 2026)
+│   └── Articulo_..._v2_revisado_2026-10.{pdf,docx}   ← Artículo en español, versión revisada (octubre de 2026)
 ├── figuras/
 │   ├── ecuaciones/                      ← Las 8 láminas de ecuaciones, con las siglas en español (PDF + PNG)
 │   └── esquemas/                        ← Arquitectura de dos niveles (Figura 2) y síntesis bibliográfica (Tabla 8)
