@@ -70,7 +70,7 @@ Solo **SM** procede de una fuente externa: el puesto 75 de Colombia entre 99 Est
   python3 verification/verify_model.py 300000
   ```
 
-- **[🔎 Búsqueda bibliográfica documentada](https://github.com/diegocabuya/Cyber_Power_and_Maritime_Power/tree/main/search)** — cadenas de búsqueda, registros crudos (OpenAlex y Scopus, 13 de octubre de 2026, 2014–2026) y el registro de cribado de los 812 registros únicos.
+- **[🔎 Búsqueda bibliográfica documentada](https://github.com/diegocabuya/Cyber_Power_and_Maritime_Power/tree/main/search)** — cadenas de búsqueda, registros recuperados (completos de OpenAlex, identificadores de Scopus; 13 de octubre de 2026, 2014–2026) y el registro de cribado de los 812 registros únicos.
 
 ## Contenido de este repositorio
 
@@ -98,7 +98,7 @@ Solo **SM** procede de una fuente externa: el puesto 75 de Colombia entre 99 Est
 
 ## Licencia
 
-Los **materiales de investigación** (artículos, figuras, láminas de ecuaciones, infografía, presentaciones, y las consultas y registros de cribado de los autores) se comparten bajo licencia [**Creative Commons Atribución 4.0 Internacional (CC BY 4.0)**](https://creativecommons.org/licenses/by/4.0/deed.es), la misma con la que IEEE Access publica sus artículos: pueden compartirse y adaptarse con cualquier fin, citando la autoría. El **código** (simulador, sitio y scripts de verificación y de búsqueda) se comparte bajo licencia [**MIT**](https://opensource.org/licenses/MIT). Los registros bibliográficos de terceros del directorio `search/` del repositorio en inglés no están cubiertos: los datos de OpenAlex son CC0 y las exportaciones de Scopus siguen sujetas a las condiciones de uso de Elsevier. Ver [`LICENSE`](LICENSE). Los dos repositorios usan las mismas licencias.
+Los **materiales de investigación** (artículos, figuras, láminas de ecuaciones, infografía, presentaciones, y las consultas y registros de cribado de los autores) se comparten bajo licencia [**Creative Commons Atribución 4.0 Internacional (CC BY 4.0)**](https://creativecommons.org/licenses/by/4.0/deed.es), la misma con la que IEEE Access publica sus artículos: pueden compartirse y adaptarse con cualquier fin, citando la autoría. El **código** (simulador, sitio y scripts de verificación y de búsqueda) se comparte bajo licencia [**MIT**](https://opensource.org/licenses/MIT). Los registros bibliográficos de terceros del directorio `search/` del repositorio en inglés no están cubiertos: los datos de OpenAlex son CC0 y los de Scopus, publicados solo como identificadores, siguen sujetos a las condiciones de uso de Elsevier. Ver [`LICENSE`](LICENSE). Los dos repositorios usan las mismas licencias.
 
 ---
 
