@@ -98,7 +98,7 @@ Solo **SM** procede de una fuente externa: el puesto 75 de Colombia entre 99 Est
 
 ## Licencia
 
-Los **materiales de investigación** se comparten bajo licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es) y el **código** bajo licencia [MIT](https://opensource.org/licenses/MIT), según el archivo [`LICENSE`](LICENSE). Los materiales del repositorio en inglés se publican bajo CC BY 4.0.
+Los **materiales de investigación** (artículos, figuras, láminas de ecuaciones, infografía, presentaciones, y las consultas y registros de cribado de los autores) se comparten bajo licencia [**Creative Commons Atribución 4.0 Internacional (CC BY 4.0)**](https://creativecommons.org/licenses/by/4.0/deed.es), la misma con la que IEEE Access publica sus artículos: pueden compartirse y adaptarse con cualquier fin, citando la autoría. El **código** (simulador, sitio y scripts de verificación y de búsqueda) se comparte bajo licencia [**MIT**](https://opensource.org/licenses/MIT). Los registros bibliográficos de terceros del directorio `search/` del repositorio en inglés no están cubiertos: los datos de OpenAlex son CC0 y las exportaciones de Scopus siguen sujetas a las condiciones de uso de Elsevier. Ver [`LICENSE`](LICENSE). Los dos repositorios usan las mismas licencias.
 
 ---
 
