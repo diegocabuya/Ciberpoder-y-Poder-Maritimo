@@ -4,9 +4,9 @@
 
 ### *Un modelo multiplicativo normalizado para la evaluación multidominio del poder marítimo*
 
-**Diego E. Cabuya-Padilla** · **Sergio Uribe-Cáceres** · **Carlos A. Castaneda-Marroquin**
+**Diego E. Cabuya-Padilla**
 
-Academia Naval de Estudios Estratégicos, Armada de Colombia · Escuela Superior de Guerra «General Rafael Reyes Prieto» · Escuela Naval de Cadetes «Almirante Padilla» (NAVTEG)
+Academia Naval de Estudios Estratégicos, Armada de Colombia · Grupo de Investigación Poseidón, Escuela Naval de Cadetes «Almirante Padilla»
 
 *Versión en español del artículo · Versión en inglés en revisión en IEEE Access*
 
@@ -94,7 +94,7 @@ Solo **SM** procede de una fuente externa: el puesto 75 de Colombia entre 99 Est
 
 ## Cómo citar
 
-> Cabuya-Padilla, D. E., Uribe-Cáceres, S. y Castaneda-Marroquin, C. A. (2026). *El ciberpoder como variable estructural del poder marítimo: un modelo multiplicativo normalizado para la evaluación multidominio del poder marítimo* [Manuscrito]. Versión en inglés en revisión en *IEEE Access*. Materiales de apoyo: https://github.com/diegocabuya/Cyber_Power_and_Maritime_Power
+> Cabuya-Padilla, D. E. (2026). *El ciberpoder como variable estructural del poder marítimo: un modelo multiplicativo normalizado para la evaluación multidominio del poder marítimo* [Manuscrito]. Versión en inglés en revisión en *IEEE Access*. Materiales de apoyo: https://github.com/diegocabuya/Cyber_Power_and_Maritime_Power
 
 ## Licencia
 
